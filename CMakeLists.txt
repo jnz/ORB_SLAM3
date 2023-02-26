@@ -205,6 +205,10 @@ add_executable(mono_tum_vi
         Examples/Monocular/mono_tum_vi.cc)
 target_link_libraries(mono_tum_vi ${PROJECT_NAME})
 
+add_executable(mono_webcam
+        Examples/Monocular/mono_webcam.cc)
+target_link_libraries(mono_webcam ${PROJECT_NAME})
+
 if(realsense2_FOUND)
     add_executable(mono_realsense_t265
             Examples/Monocular/mono_realsense_t265.cc)
